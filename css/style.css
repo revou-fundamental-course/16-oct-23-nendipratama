@@ -1,0 +1,253 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 2em;
+    border-bottom: 1px solid darkblue
+}
+
+.nav-logo img {
+    max-height: 40px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-item {
+    padding: 2px 1em;
+    border: 0.5px solid black;
+    min-width: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background: black;
+    color: white;
+}
+
+.greetings {
+    padding-top: 2em;
+    padding-left: 5em;
+    color: white; 
+}
+
+/* About */
+.about {
+    border-bottom: 1px solid black;
+    padding: 4em;
+    display: flex;
+    width: 95.5%;
+}
+
+.about-content {
+    margin-left: 10px;
+    margin-right: 20px;
+    top: 50%;
+    transform: translateY(10%);
+}
+
+.about h1 {
+    font-size: 40px;
+    margin-left: 15px;
+    margin-bottom: -5px;
+    color: rgb(203, 202, 164);
+    background-color: black;
+    width: 55%;
+}
+
+.about p {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.about img {
+    height: 500px;
+    width: 700px;
+    float: right;
+    margin-right: -24px;
+    margin-top: -64px;
+    margin-bottom: -63.5px;
+}
+
+
+.banner {
+    border-bottom: 1px solid black;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../assets/background.jpg") no-repeat center center/cover;
+    height: 578px;
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+/* Headquarters */
+.headquarters {
+    border-bottom: 1px solid black;
+    padding: 4em;
+    background: rgba(211, 211, 211, 0.3);
+}
+
+.headquarters h1 {
+    font-size: 40px;
+    margin-left: 15px;
+    margin-bottom: -5px;
+    color: rgb(208, 208, 185);
+    background-color: black;
+    width: 55%;
+}
+
+.headquarters h3 {
+    margin: 20px 0;
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.headquarters p {
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.circle-jakarta {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: url("../assets/Jakarta.jpg") no-repeat center center/cover;
+}
+
+.circle-bandung {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: url("../assets/bandung.jpg") no-repeat center center/cover;
+}
+
+.circle-surabaya {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: url("../assets/surabaya.jpg") no-repeat center center/cover;
+}
+
+
+.hq-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.hq-item {
+    text-align: center;
+    margin: 20px;
+}
+
+p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+
+
+.footer-text {
+    color: blue;
+    font-size: small;
+}
+
+.form {
+    padding: 4em;
+}
+.form-left {
+    padding: 2em;
+}
+
+input[type=text],
+input[type=date],
+input[type=radio],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Style the container */
+.container {
+    display: flex;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.form-input {
+    width: 600px;
+}
+
+.form-output {
+    margin-top: 100px;
+    margin-left: 25px;
+    width: 50%;
+    height: 50%;
+}
+
+/* column  label */
+.col-label {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* column  input */
+.col-input {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .col-label,
+    .col-input,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
-    <link src="./js/script.js">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Hello WOI</h1>
+    <header class="header">
+        <div class="nav-logo">
+            <img src="./assets/revou-logo.png" alt="revou-logo">
+        </div>
+        <nav class="nav" id="navbar">
+            <a style="text-decoration:none;" href="#home">
+                <div class="nav-item">Home</div>
+            </a>
+            <a style="text-decoration:none;" href="#about">
+                <div class="nav-item">Our Profile</div>
+            </a>
+            <a style="text-decoration:none;" href="#porto">
+                <div class="nav-item">Portofolio</div>
+            </a>
+            <a style="text-decoration:none;" href="#form">
+                <div class="nav-item">Message Us</div>
+            </a>
+        </nav>
+    </header>
+    <section id="home" class="banner">
+        <div class="greetings">
+            <h1>Hi, my name is Nendi</h1>
+            <p>Ini adalah latihan website pertama</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about-content">
+            <h1>About Software Engineering</h1>
+            <p>Quoted from the Institute of Electrical and Electronics Engineers / IEEE (1993), 
+                understanding software engineering is a systematic, structured and disciplined technological approach.
+                Although it is basically one branch of computer science to find out something wrong with a software, 
+                now its function is widening even wider.Software engineering is needed not only when operating errors are found, 
+                but rather how a device is found.
+            </p>
+        </div>
+        <img src="./assets/About.jpg" alt="about-photo">
+    </section>
+    <section id="porto" class="headquarters">
+        <h1>Our Head Quarters</h1>
+        <div class="hq-items">
+            <div class="hq-item">
+                <div class="circle-jakarta"></div>
+                <p>Jakarta</p>
+            </div>
+            <div class="hq-item">
+                <div class="circle-bandung"></div>
+                <p>Bandung</p>
+            </div>
+            <div class="hq-item">
+                <div class="circle-surabaya"></div>
+                <p>Surabaya</p>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <section id="form" class="form">
+        <h1>Message Us</h1>
+        <div class="container">
+            <div class="form-input">
+                <div class="row">
+                    <div class="col-label">
+                        <label for="fname">Nama</label>
+                    </div>
+                    <div class="col-input">
+                        <input type="text" id="fname" name="firstname" placeholder="Tuliskan Nama Lengkap Anda...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-label">
+                        <label for="country">Tanggal Lahir</label>
+                    </div>
+                    <div class="col-input">
+                        <input type="date" id="tanggal-lahir" placeholder="Masukkan Tanggal Lahir Anda...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-label">
+                        <label for="subject">Jenis Kelamin</label>
+                    </div>
+                    <div class="col-input">
+                        <select id="jenis-kelamin" name="jenis-kelamin">
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-label">
+                        <label for="subject">Pesan</label>
+                    </div>
+                    <div class="col-input">
+                        <textarea name="Pesan" id="Pesan" cols="30" rows="10" placeholder="Pesan"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+            </div>
+            <div class="form-output">
+                <textarea name="Output" id="form-output" cols="30" rows="7" disabled></textarea>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <center>
+            <p class="footer-text">Made By Nendi</p>
+        </center>
+    </footer>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
